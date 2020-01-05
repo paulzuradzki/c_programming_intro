@@ -1,0 +1,20 @@
+
+
+// standard pointer reference
+char c = 'x';
+char *char_pointer = &c;
+
+// cannot modify pointer
+// invalid re-assignment: char_pointer = &d;
+char c = 'x';
+char * const char_pointer = &c;
+
+
+// cannot modify c through pointer variable
+// invalid re-assignment: *char_pointer = 'Y';
+char c = 'x';
+const char *char_pointer = &c;
+
+// both pointer var and the pointee will not be changed through the pointer
+char c = 'x';
+const char * const *char_pointer = &c;
